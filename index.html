@@ -13,19 +13,21 @@
 </head>
 
 <body class="bg-gray-100 ">
-    <div class="mx-auto bg-white">
+       <div>
+         <!--component1-->
+       <div class="mx-auto bg-white">
         <!-- Main container with navigation and header content -->
         <div class="relative flex flex-wrap items-center justify-between w-full shrink-0 py-3">
             <div class="px-4">
                 <img class="h-8" src="assets/component-1/navigation/cache-bank-logo.png" alt="CACHE logo">
             </div>
             <div class="hidden md:flex items-center justify-between text-black gap-12">
-                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Product</a>
-                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Features</a>
-                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Get Started</a>
-                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Contact</a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#product">Product</a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#features">Features</a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#pricing">Get Started</a>
+                <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#contact">Contact</a>
             </div>
-            <div class="hidden md:flex gap-8 items-center">
+            <div class="hidden md:flex gap-8 items-center mx-12">
                 <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log-in</button> 
                 <button class="px-4 py-2 text-sm font-bold text-black bg-green-500 rounded-xl hover:bg-pink-500">Sign-up</button> 
             </div>
@@ -62,10 +64,10 @@
 
             <div class="absolute md:hidden hidden flex  flex-col items-start justify-center w-full gap-6 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">
   
-                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Product</a>
-                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Features</a>
-                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Get Started</a>
-                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="">Contact</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#product">Product</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#features">Features</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="#pricing">Pricing</a>
+                    <a class="text-sm font-normal text-dark-grey-700 hover:text-dark-grey-900" href="company">Company</a>
 
                     <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log-in</button> 
                     <button class="px-4 py-2 text-sm font-bold text-black bg-green-500 rounded-xl hover:bg-pink-500">Sign-up</button> 
@@ -73,22 +75,81 @@
             </div>
         </div>
 
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="container mx-auto">
-        <!-- Centered container for more content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
-    </div>
-    <div class="w-full bg-green-500">
+        </div>
+       <!--component2 hero&endorsement-->
+       <div class="w-full md:mx-12 " id="product">
+       <!-- Wide full-width container for additional content -->
+         <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8  md:grid-cols-2 xl:gap-14 md:gap-5">
+           <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+              <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:*:text-6xl text-dark-grey-900">
+                 The Clever Place to Keep Your Cache
+              </h1>
+
+              <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                 Cache Bank is  designed exclusively forsoftware developers.
+                  We understand your financial needs are as unique as the code you write. 
+                  Our services offer cutting-edge financial solutions that help you take care of your cash. 
+              </p>
+
+              <div class="flex flex-col items-center gap-4 lg:flex-row">
+                <button class=" flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-purple-blue-300 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                   Join Cache now
+                </button>
+                <button class=" flex items-center py-4 text-sm font-bold text-white px-7 focus:ring-purple-blue-300 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                   join our Discord Server
+                </button>
+              </div>
+           </div>
+
+           <div class="items-center justify-end hidden col-span-1 md:flex ">
+              <img class="w-4/5 rounded-md"
+              src="assets/component-2/hero-image.png" alt="Female sitting in front a desktop">
+             
+           </div>
+
+           <!-- Endrosement -->
+           <section class="w-screen">
+              <div class="container flex flex-col items-center gap-8 mx-auto ">
+                  <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">
+                     Endrosed by global companies like
+                  </p>
+
+                  <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 64 64" style="fill: #1b2559">
+                        <path d="M32.376953 7c-6.725 0-14.195 2.516-15.768 10.742C16.441 18.618 17.053 19.067 17.631 19.195L24.461 19.893c.642-.034 1.153-.632 1.278-1.264.588-2.834 2.99-4.234 5.682-4.234 1.454 0 3.097.546 3.957 1.834 1.993 2.438 1.83 4.389 1.83 6.055v.949c-4.098.456-9.443.734-13.275 2.402-4.428 1.894-7.533 5.758-7.533 11.438 0 7.268 4.646 10.932 10.596 10.932 5.026 0 7.739-1.205 11.619-5.117 1.282 1.838 1.738 2.743 4.086 4.677.528.28 1.192.224 1.658-.191v.065c1.41-1.244 3.984-3.476 5.424-4.678.574-.468.45-1.198 0-1.836-1.292-1.766-2.617-3.23-2.617-6.51V22.544c0-4.618.311-8.89-3.127-12.07C39.523 7.899 35.013 7 31.577 7zM35.248 27.836c.318.005.636.016.956.016v1.516c.002 2.728.112 4.971-1.276 7.395-1.124 1.968-2.932 3.159-4.916 3.159-2.712 0-4.279-2.028-4.279-5.056 0-5.21 4.097-6.722 8.557-7.012.319-.021.638-.021.957.016zM54.172 45.441c-1.818.026-3.948.409-5.578 1.541-.5.348-.427.836.129.77 1.834-.218 5.887-.73 6.617.192.728.924-1.806 4.722-2.49 6.42-.208.512.243.71.711.32 3.052-2.528 3.868-7.771 3.244-8.539-.31-.374-1.813-.729-3.633-.703zM6.367 46.404c-.38.05-.531.542-.131.9C13.02 53.369 21.968 57 31.924 57c7.102 0 15.392-2.199 21.082-6.357.94-.69.118-1.754-.844-1.348C45.784 51.975 38.816 53.274 32.51 53.274 23.16 53.274 14.14 50.747 6.822 46.531c-.162-.092-.331-.143-.455-.127z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 64 64" style="fill: #1b2559">
+                        <path d="M53.5,10h-13l-2,5.5h-3L34,19l-6.5-9H14L3,45l12,11h13l2-8l1,1.5h4l5.5,6.5h13L60,23L53.5,10z M39,19h1h1.5h2l-1.14,3.04l-4.569,0.286L39,19z M16.979,14h6.87l-0.635,2.223l-7.198,0.576L16.979,14z M17.5,43H7l3.518-10.224L13,32.5L10,41h8.192L17.5,43z M19.045,38.538L13.5,39l1-3h5.423L19.045,38.538z M43.97,43H33l3.874-13H33.47L31,36.5h-8l2.28-6.5H22l-1.217,3.517l-5.598,0.431L16.5,30h-5.027l3.785-11h7.162l-0.571,2H25l-1,3.5h10h3h11.455L43.97,43z M49.154,21.615l-3.827,0.239L47,16h-4.354l0.764-2H51L49.154,21.615z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="155" height="65" viewBox="0 0 184 65" fill="none">
+                        <path d="M20.277 64.883c-5.477-.216-9.958-1.7-13.462-4.458-.668-.526-2.262-2.106-2.797-2.772-1.421-1.77-2.387-3.493-3.031-5.404C-.996 46.363.025 38.642 3.906 30.169c3.323-7.254 8.45-14.449 17.395-24.414C22.618 4.288 26.542 0 26.568 0c.01 0-.204.367-.473.814C23.768 4.674 21.778 9.221 20.694 13.157c-1.742 6.316-1.532 11.736.615 15.939 1.481 2.895 4.02 5.403 6.875 6.789 5.998 2.427 13.316 2.628 22.252.588.615-.141 31.101-8.159 67.746-17.818 36.646-9.66 66.634-17.557 66.638-17.551.01.009-85.137 36.109-129.339 54.837-7.002 2.966-8.874 3.715-12.165 4.86-8.413 2.927-15.949 4.324-22.04 4.085z" fill="#1B2559"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 64 64" style="fill: #1b2559">
+                        <path d="M42.02 4c-.67-.002-1.45.045-2.41.127L8.395 6.414c-2.518.216-3.395 1.85-3.395 3.808v33.97c0 1.525.547 2.829 1.862 4.572L14.199 58.238c1.205 1.524 2.302 1.851 4.604 1.742L55.057 57.8c3.066-.215 3.944-1.631 3.944-4.025V15.559c0-1.307-.549-1.632-2.193-2.83l-9.965-6.968C45.035 4.455 44.027 4.006 42.02 4zM41.373 6.988c1.975.032 3.101.79 3.974 1.465L50.557 12.2c.221.11.775.77.109.77H19.299c-3.327.223-3.993.332-5.764-1.1L9.213 10.326"/>
+                    </svg>
+                
+              </div>
+           </section>
+
+
+         </section>
+       </div>
+       <!--component3-->
+       <div class="container mx-auto" id="features">
+       <!-- Centered container for more content -->
+       </div>
+       <div class="w-full" id="pricing">
+       <!-- Wide full-width container for additional content -->
+       </div>
+       <div class="w-full" id="company">
+       <!-- Wide full-width container for additional content -->
+       </div>
+       <div class="w-full bg-green-500" id="contact">
         <!-- Full-width footer container with green background -->
+       </div>
+       
     </div>
+
     <script>
         document.getElementById("mobile-menu-toggle").addEventListener("click", function() {
             document.getElementById("mobile-menu").classList.toggle("hidden");
